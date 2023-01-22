@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0 0 0 0;
+  overflow-x: hidden;
+  font-family: Roboto;
+  background: #C4C4C4;
+}
+
+.container {
+  padding: 70px;
+  width: 661px;
+  height: 763px;
+  background: #C4C4C4;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 100%;
+  height: 60px;
+  font-size: 40px;
+  border: none;
+}
+
+.options__context-menu {
+  display: none;
+  background: white;
+}
+
+.options__container {
+  width: 100%;
+  overflow: hidden;
+  background: #E3E3E3;
+}
+
+option {
+  border: 1px solid black;
+  font-size: 30px;
+  width: 100%;
+}
+
+option:hover {
+  background: #65CDF9;
+}
+
+.results__container {
+  margin: 35px 0 70px 0;
+}
+
+.option_created {
+  height: 100px;
+  position: relative;
+  font-family: Roboto serif;
+  border: 2px solid black;
+  background: #E27BEB;
+  line-height: 0;
+  padding-left: 10px;
+  flex-direction: column;
+  align-content: center;
+  font-size: 24px;
+}
+
+.btn_delete {
+  position: absolute;
+  top: 25%;
+  right: 34px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.btn_delete:before,
+.btn_delete:after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 10px;
+  width: 55px;
+  height: 4px;
+  background: #e62f57;
+}
+
+.btn_delete:before {
+  webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn_delete:after {
+  webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.btn_delete:hover {
+  filter: opacity(50%);
+}
